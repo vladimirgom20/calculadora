@@ -1,0 +1,14 @@
+{
+  "name": "hhtml5css",
+  "version": "1.0.0",
+  "description": "es un pequeño curso de html y css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "scripts":{
+    "dev": "http-server"
+  },
+  "author": "vladimir",
+  "license": "ISC"
+}

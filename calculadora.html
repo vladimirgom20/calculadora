@@ -1,0 +1,104 @@
+<link rel="icon" href="img/calculator.png">
+<title>calculadora</title>
+<div class="calculator-container">
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="button-group">
+            <button class="rounded">7</button>
+            <button class="rounded">8</button>
+            <button class="rounded">9</button>
+            <button class="rounded">+</button>
+        </div>
+        <div class="button-group">
+            <button class="rounded">4</button>
+            <button class="rounded">5</button>
+            <button class="rounded">6</button>
+            <button class="rounded">-</button>
+        </div>
+        <div class="button-group">
+            <button class="rounded">1</button>
+            <button class="rounded">2</button>
+            <button class="rounded">3</button>
+            <button class="rounded">*</button>
+        </div>
+        <div class="button-group">
+            <button class="rounded">0</button>
+            <button class="rounded">/</button>
+            <button class="rounded">C</button>
+            <button class="rounded orange">=</button>
+        </div>
+    </div>
+</div>
+<script src="operacion.js"></script>
+<style>
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+    .calculator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.calculator {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.rounded {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: white;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rounded.orange {
+    background-color: orange;
+}
+
+.calculator button {
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.calculator input[type="text"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    font-size: 24px;
+    text-align: right;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.calculator button:active {
+    transform: scale(0.95);
+}
+</style>
