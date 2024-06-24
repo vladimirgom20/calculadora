@@ -1,2 +1,2 @@
 # calculadora
-prueba de calculadora basica
+prueba de calculadora basica (español)
